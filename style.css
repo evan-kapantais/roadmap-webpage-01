@@ -1,0 +1,118 @@
+@import url("reset.css");
+
+:root {
+  --primary-font-color: rgb(253, 238, 170);
+  --primary-font: 'Raleway', sans-serif;
+  --secondary-font: sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+/* Navbar */
+
+.navbar {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+}
+
+.list-item {
+  display: inline-block;
+  color: white;
+  margin-right: 7px;
+  border-top: 1px solid transparent;
+  transition: all .3s;
+}
+
+.list-item:last-child {
+  margin-right: 0;
+}
+
+.list-item:hover {
+  color: var(--primary-font-color);
+  transform: translateY(3px);
+  border-top: 1px solid var(--primary-font-color);
+}
+
+/* Header */
+
+header {
+  position: relative;
+  height: 75vh;
+  color: #fff;
+  background: url("images/hero-image.jpg");
+  background-position: -150px 20px;
+  background-size: cover;
+}
+
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-container h3 {
+  font-family: var(--secondary-font);
+}
+
+.hero-container h1 {
+  margin-bottom: 40px;
+  font-size: 5em;
+  letter-spacing: .15em;
+}
+
+.hero-container button {
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.hero-container button:hover {
+  color: var(--primary-font-color);
+  border: 1px solid var(--primary-font-color);
+}
+
+/* Unsplash Copy */
+
+.hero-copy {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetia Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-copy span {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+.hero-copy svg {
+  height: 12px;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+  fill: white;
+}

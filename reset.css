@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: inherit;
+}
+
 input, textarea, select, button {
   color: inherit;
   font: inherit;
